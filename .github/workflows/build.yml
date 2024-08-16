@@ -43,7 +43,7 @@ jobs:
       - name: Install Qt
         uses: jurplel/install-qt-action@v4
         with:
-          version: 6.*
+          version: 6.7.*
           cache: true
       
       - name: Install development packages via vcpkg
