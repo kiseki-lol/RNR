@@ -1,0 +1,40 @@
+material materials/PartInstanced/shadow_caster
+{
+	technique
+	{
+		pass
+		{
+			rtshader_system
+			{
+				lighting_stage gbuffer depth
+				transform_stage instanced
+			}
+		}
+	}
+}
+
+material materials/PartInstanced
+{
+    receive_shadows on 
+
+    technique
+    {
+
+        pass
+        {
+            specular	1 1 1 1 64.5	
+            lighting on
+
+            texture_unit
+            {
+                colour_op_ex source1 src_manual src_current 1.0 0.5 0.5
+            }
+
+            rtshader_system
+            {
+                lighting_stage per_pixel
+                transform_stage instanced
+            }
+        }
+    }
+}

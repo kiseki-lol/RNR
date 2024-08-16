@@ -1,0 +1,15 @@
+material materials/GuiBase3d
+{
+	technique
+	{
+		pass
+		{
+			specular	1 1 1 1 12.5	
+
+			rtshader_system
+            {
+                lighting_stage per_pixel
+			}
+		}
+	}
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- exporter: blender2ogre 0.8.3 -->
+<!-- export_time: Thu, 20 Jul 2023 08:32:47 +0000 -->
+<!-- previous_export_time: Mon, 17 Jul 2023 06:58:22 +0000 -->
+<scene author="caesium" formatVersion="1.1" >
+  <nodes >
+    <node name="Cube_Instanced" >
+      <position x="0.000000" y="0.000000" z="0.000000" />
+      <rotation qw="1.000000" qx="0.000000" qy="0.000000" qz="0.000000" />
+      <scale x="1.000000" y="1.000000" z="1.000000" />
+      <entity meshFile="Cube_Instanced.mesh" name="Cube_Instanced" >
+        <userData />
+      </entity>
+    </node>
+  </nodes>
+  <externals >
+    <item type="material" >
+      <file name="InstancedMaterial.material" />
+    </item>
+  </externals>
+  <environment >
+    <colourBackground b="0.050876" g="0.050876" r="0.050876" />
+  </environment>
+</scene>

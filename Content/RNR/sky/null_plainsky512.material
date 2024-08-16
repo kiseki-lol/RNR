@@ -1,0 +1,17 @@
+material sky/null_plainsky512
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+
+			texture_unit
+			{
+				cubic_texture sky/null_plainsky512_rt.jpg sky/null_plainsky512_lf.jpg sky/null_plainsky512_bk.jpg sky/null_plainsky512_ft.jpg sky/null_plainsky512_up.jpg sky/null_plainsky512_dn.jpg separateUV
+				tex_address_mode clamp
+			}
+		}
+	}
+}
