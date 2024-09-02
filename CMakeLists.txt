@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.7.0)
 
 project(RNR)
 
+set(CMAKE_CXX_STANDARD 20)
+
 include(CMake/CreateResources.cmake)
 
 option(COMPILE_PLAYER "Compile the RNR player" ON)
