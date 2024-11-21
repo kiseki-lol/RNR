@@ -79,7 +79,7 @@ jobs:
           echo "hash=${GITHUB_SHA::7}" >> $GITHUB_OUTPUT
       
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: rnr-${{ steps.vars.outputs.hash }}-linux_x64-${{ steps.vars.outputs.configuration }}
           path: packaged
@@ -150,7 +150,7 @@ jobs:
           echo "hash=${GITHUB_SHA::7}" >> $GITHUB_OUTPUT
       
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: rnr-${{ steps.vars.outputs.hash }}-win_x64-${{ steps.vars.outputs.configuration }}
           path: packaged
